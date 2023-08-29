@@ -71,5 +71,5 @@ int Adress::getHouse()const{
 
 
 void Adress::showInfo()const{
-    std::cout << "Adress: " << country << "-" << city << "-" << street << "," << house << ". Potal code : " << postcode << std::endl;
+    std::cout << "Adress: " << country << "-" << city << "-\n    -" << street << "," << house << ".\n   Potal code : " << postcode << std::endl;
 }

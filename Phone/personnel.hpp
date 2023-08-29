@@ -1,23 +1,24 @@
 #pragma once
 #include "contact.hpp"
+#include "Adress.hpp"
 
 class Personnel:public Contact{
     string surname;
-    string adress;
+    Adress adress;
     string phone;
 public:
     Personnel();
-    Personnel(string _surname, string _adress, string _phone);
+    Personnel(string _surname, Adress _adress, string _phone);
     
     void setSurname(string _surname);
-    void setAdress(string _adress);
+    void setAdress(Adress _adress);
     void setPhone(string _phone);
     
     string getSurname()const;
-    string getAdress()const;
+    Adress getAdress()const;
     string getPhone()const;
     
-    virtual void show()const;
-    virtual string type()const;
+    virtual void show()const override;
+    virtual string type()const override;
 };
 
