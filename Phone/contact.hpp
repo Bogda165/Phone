@@ -6,8 +6,8 @@ using std::string;
 using std::cout;
 using std::endl;
 
-class Contatc{
+class Contact{
 public:
     virtual void show()const = 0;
-    virtual void type()const = 0;
+    virtual string type()const = 0;
 };
