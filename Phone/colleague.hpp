@@ -1,6 +1,8 @@
 #pragma once
 #include "contact.hpp"
 #include "Adress.hpp"
+#include "Friend.hpp"
+#include "personnel.hpp"
 
 class Colleague:public Contact{
     Adress adress;
@@ -26,4 +28,6 @@ public:
     
     virtual void show()const override;
     virtual string type()const override;
+    
+    friend std::istream& operator >> (std::istream& is, Colleague& t);
 };

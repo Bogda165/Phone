@@ -76,5 +76,36 @@ void Colleague::show()const{
     cout << "   Company name : " << name << endl;
 }
 string Colleague::type()const{
-    return "Friend";
+    return "Colleague";
+}
+
+std::istream& operator>>(std::istream& is, Colleague& obj){
+    string tmp;
+    cout << "Choose contact typ -> Friend Colleague Personal:\n";
+    cin >> tmp;
+    if(tmp == "Friend"){
+        Contact* tmpT= new Friend;
+        is >> (*((Friend*)tmpT));
+        obj.contact = tmpT;
+    }else if(tmp == "Colleague"){
+        Contact* tmpT= new Colleague;
+        is >> (*((Colleague*)tmpT));
+        obj.contact = tmpT;
+    }if(tmp == "Personnel"){
+        Contact* tmpT= new Personnel;
+        is >> (*((Personnel*)tmpT));
+        obj.contact = tmpT;
+    }
+    cout << "Enter phone work : ";
+    is >> tmp;
+    obj.setPhone(tmp);
+    cout << "Adress work: \n";
+    is >> obj.adress;
+    cout << "Enter fax number : ";
+    is >> tmp;
+    obj.setFax(tmp);
+    cout << "Enter company name : ";
+    is >> tmp;
+    obj.setName(tmp);
+    return is;
 }

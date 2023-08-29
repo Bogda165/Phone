@@ -73,3 +73,24 @@ int Adress::getHouse()const{
 void Adress::showInfo()const{
     std::cout << "Adress: " << country << "-" << city << "-\n    -" << street << "," << house << ".\n   Potal code : " << postcode << std::endl;
 }
+
+std::istream& operator>>(std::istream& is, Adress& obj){
+    string tmp;
+    int tmp2;
+    std::cout << "Enter country : ";
+    is >> tmp;
+    obj.setCountry(tmp);
+    std::cout << "Enter city : ";
+    is >> tmp;
+    obj.setCity(tmp);
+    std::cout << "Enter street : ";
+    is >> tmp;
+    obj.setStreet(tmp);
+    cout << "Enter house nubmer : ";
+    is >> tmp2;
+    obj.setHouse(tmp2);
+    cout << "Enter postal code : ";
+    is >> tmp2;
+    obj.setPostcode(tmp2);
+    return is;
+}

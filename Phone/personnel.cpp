@@ -56,3 +56,17 @@ void Personnel::show()const{
     cout << "   Adress : ";
     adress.showInfo();
 }
+
+std::istream& operator>>(std::istream& is, Personnel& obj){
+    string tmp1;
+    cout << "Enter surname : ";
+    is >> tmp1;
+    obj.setSurname(tmp1);
+    cout << "Enter phone : ";
+    is >> tmp1;
+    obj.setPhone(tmp1);
+    cout << "Adress : \n";
+    is >> obj.adress;
+    
+    return is;
+}

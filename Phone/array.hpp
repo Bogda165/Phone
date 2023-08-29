@@ -13,8 +13,10 @@ public:
     void sort_n();
     void sort_p();
     
-    Contact* find_n()const;
-    Contact* find_p()const;
+    Contact* find_n(string s)const;
+    Contact* find_p(string s)const;
+    
+    int getSize()const;
     
     void show()const;
-}
+};

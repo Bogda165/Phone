@@ -36,4 +36,15 @@ string Friend::type()const{
     return "Friend";
 }
 
-
+std::istream& operator>>(std::istream& is, Friend& obj){
+    cout << "Enter surname : ";
+    is >> obj.surname;
+    cout << "Enter phone : ";
+    is >> obj.phone;
+    cout << "Enter date -> ";
+    is >> obj.DB;
+    cout << "Adress : \n";
+    is >> obj.adress;
+    
+    return is;
+}

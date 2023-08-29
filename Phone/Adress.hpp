@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 using std::string;
+using std::cout;
+using std::endl;
 
 class Adress{
     string street;
@@ -27,5 +29,6 @@ public:
     string getCountry()const;
     
     void showInfo()const;
+    friend std::istream& operator >> (std::istream& is, Adress& obj);
     
 };

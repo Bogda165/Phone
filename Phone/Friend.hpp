@@ -12,4 +12,5 @@ public:
     
     virtual void show()const override;
     virtual string type()const override;
+    friend std::istream& operator >> (std::istream& is, Friend& t);
 };
