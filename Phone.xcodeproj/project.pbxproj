@@ -13,6 +13,7 @@
 		880509B52A9E4257000E0689 /* Adress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509B32A9E4257000E0689 /* Adress.cpp */; };
 		880509B82A9E49D0000E0689 /* Friend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509B62A9E49D0000E0689 /* Friend.cpp */; };
 		880509BB2A9E4A5C000E0689 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509B92A9E4A5C000E0689 /* Date.cpp */; };
+		880509BE2A9E5EEC000E0689 /* colleague.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509BC2A9E5EEC000E0689 /* colleague.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		880509B72A9E49D0000E0689 /* Friend.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Friend.hpp; sourceTree = "<group>"; };
 		880509B92A9E4A5C000E0689 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Date.cpp; path = "../../../../Documents_MB/C++_and_OOP/Date_or/Date.cpp"; sourceTree = "<group>"; };
 		880509BA2A9E4A5C000E0689 /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Date.hpp; path = "../../../../Documents_MB/C++_and_OOP/Date_or/Date.hpp"; sourceTree = "<group>"; };
+		880509BC2A9E5EEC000E0689 /* colleague.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = colleague.cpp; sourceTree = "<group>"; };
+		880509BD2A9E5EEC000E0689 /* colleague.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = colleague.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				880509B72A9E49D0000E0689 /* Friend.hpp */,
 				880509B92A9E4A5C000E0689 /* Date.cpp */,
 				880509BA2A9E4A5C000E0689 /* Date.hpp */,
+				880509BC2A9E5EEC000E0689 /* colleague.cpp */,
+				880509BD2A9E5EEC000E0689 /* colleague.hpp */,
 			);
 			path = Phone;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880509BE2A9E5EEC000E0689 /* colleague.cpp in Sources */,
 				880509AF2A9E3F82000E0689 /* contact.cpp in Sources */,
 				880509B52A9E4257000E0689 /* Adress.cpp in Sources */,
 				880509B22A9E40C7000E0689 /* personnel.cpp in Sources */,
