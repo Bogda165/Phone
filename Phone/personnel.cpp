@@ -25,8 +25,11 @@ void Personnel::setAdress(Adress _adress){
 }
 
 void Personnel::setPhone(string _phone){
-    if(phone.length() != string("+380977986878").length() && phone.length() != string("0977986878").length()){
-        
+    if(_phone.length() != string("+380977986878").length()){
+        cout << "Error";
+        cout << _phone.length();
+        cout << getSurname();
+        cout << type();
     }else{
         phone = _phone;
     }
@@ -47,7 +50,7 @@ string Personnel::type()const{
     return "Personnel";
 }
 void Personnel::show()const{
-    cout << "--------------Personnel--------------\n";
+    cout << "--------------Persone--------------\n";
     cout << "   Surname : " << surname << endl;
     cout << "   Phone : " << phone << endl;
     cout << "   Adress : ";
