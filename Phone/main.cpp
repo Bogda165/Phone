@@ -7,9 +7,9 @@
 
 #include <iostream>
 #include "personnel.hpp"
+#include "Adress.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    Adress home("Ukraine", "Kharkiv", "Balakeriva", 20, 60011);
+    home.showInfo();
 }

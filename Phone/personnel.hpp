@@ -20,3 +20,4 @@ public:
     virtual void show()const;
     virtual string type()const;
 };
+

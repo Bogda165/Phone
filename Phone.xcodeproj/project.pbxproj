@@ -10,6 +10,7 @@
 		880509A72A9E3F14000E0689 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509A62A9E3F14000E0689 /* main.cpp */; };
 		880509AF2A9E3F82000E0689 /* contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509AD2A9E3F82000E0689 /* contact.cpp */; };
 		880509B22A9E40C7000E0689 /* personnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509B02A9E40C7000E0689 /* personnel.cpp */; };
+		880509B52A9E4257000E0689 /* Adress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 880509B32A9E4257000E0689 /* Adress.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		880509AE2A9E3F82000E0689 /* contact.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = contact.hpp; sourceTree = "<group>"; };
 		880509B02A9E40C7000E0689 /* personnel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = personnel.cpp; sourceTree = "<group>"; };
 		880509B12A9E40C7000E0689 /* personnel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = personnel.hpp; sourceTree = "<group>"; };
+		880509B32A9E4257000E0689 /* Adress.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adress.cpp; sourceTree = "<group>"; };
+		880509B42A9E4257000E0689 /* Adress.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Adress.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				880509AE2A9E3F82000E0689 /* contact.hpp */,
 				880509B02A9E40C7000E0689 /* personnel.cpp */,
 				880509B12A9E40C7000E0689 /* personnel.hpp */,
+				880509B32A9E4257000E0689 /* Adress.cpp */,
+				880509B42A9E4257000E0689 /* Adress.hpp */,
 			);
 			path = Phone;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				880509AF2A9E3F82000E0689 /* contact.cpp in Sources */,
+				880509B52A9E4257000E0689 /* Adress.cpp in Sources */,
 				880509B22A9E40C7000E0689 /* personnel.cpp in Sources */,
 				880509A72A9E3F14000E0689 /* main.cpp in Sources */,
 			);
