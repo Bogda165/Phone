@@ -13,6 +13,7 @@
 #include "colleague.hpp"
 
 int main(int argc, const char * argv[]) {
+    /*
     Adress home("Ukraine", "Kharkiv", "Balakeriva", 20, 60011);
     home.showInfo();
     
@@ -28,4 +29,17 @@ int main(int argc, const char * argv[]) {
     Contact* Leha = new Colleague(Roma, "+380977236878", "GlobalLogic", "+16692001010", home);
     cout << Leha->type() << endl;
     Leha->show();
+    */
+    
+    int stop = true;
+    int choose = -1;
+    while(stop){
+        cout << "1 - show";
+        cout << "0 - stop";
+        
+        cin >> choose;
+        if (choose == 0){
+            stop = false;
+        }
+    }
 }
