@@ -3,6 +3,7 @@
 #include "Adress.hpp"
 
 class Personnel:public Contact{
+protected:
     string surname;
     Adress adress;
     string phone;
